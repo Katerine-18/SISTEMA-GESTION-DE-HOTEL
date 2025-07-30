@@ -34,7 +34,7 @@ namespace SISTEMA_GESTION_DE_HOTEL
 
         public void SolicitarServicioHabitacion()
         {
-            Console.WriteLine("\n=== SOLICITAR SERVICIO A LA HABITACIÓN ===");
+            Console.WriteLine("\n== SOLICITAR SERVICIO A LA HABITACIÓN ===");
             Console.Write("Escriba el servicio que desea solicitar (ej. comida, toallas, limpieza): ");
             string servicio = Console.ReadLine();
 
