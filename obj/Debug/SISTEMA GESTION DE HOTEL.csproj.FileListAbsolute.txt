@@ -5,3 +5,10 @@ D:\Users\Itz_Tamper2814\Downloads\SISTEMA-GESTION-DE-HOTEL-main\SISTEMA-GESTION-
 D:\Users\Itz_Tamper2814\Downloads\SISTEMA-GESTION-DE-HOTEL-main\SISTEMA-GESTION-DE-HOTEL-main\obj\Debug\SISTEMA GESTION DE HOTEL.csproj.CoreCompileInputs.cache
 D:\Users\Itz_Tamper2814\Downloads\SISTEMA-GESTION-DE-HOTEL-main\SISTEMA-GESTION-DE-HOTEL-main\obj\Debug\SISTEMA GESTION DE HOTEL.exe
 D:\Users\Itz_Tamper2814\Downloads\SISTEMA-GESTION-DE-HOTEL-main\SISTEMA-GESTION-DE-HOTEL-main\obj\Debug\SISTEMA GESTION DE HOTEL.pdb
+C:\Users\Itz_Tamper2814\source\repos\SistemaHotelGrupo3AnalisisSistemas\SISTEMA-GESTION-DE-HOTEL\bin\Debug\SISTEMA GESTION DE HOTEL.exe.config
+C:\Users\Itz_Tamper2814\source\repos\SistemaHotelGrupo3AnalisisSistemas\SISTEMA-GESTION-DE-HOTEL\bin\Debug\SISTEMA GESTION DE HOTEL.exe
+C:\Users\Itz_Tamper2814\source\repos\SistemaHotelGrupo3AnalisisSistemas\SISTEMA-GESTION-DE-HOTEL\bin\Debug\SISTEMA GESTION DE HOTEL.pdb
+C:\Users\Itz_Tamper2814\source\repos\SistemaHotelGrupo3AnalisisSistemas\SISTEMA-GESTION-DE-HOTEL\obj\Debug\SISTEMA GESTION DE HOTEL.csproj.AssemblyReference.cache
+C:\Users\Itz_Tamper2814\source\repos\SistemaHotelGrupo3AnalisisSistemas\SISTEMA-GESTION-DE-HOTEL\obj\Debug\SISTEMA GESTION DE HOTEL.csproj.CoreCompileInputs.cache
+C:\Users\Itz_Tamper2814\source\repos\SistemaHotelGrupo3AnalisisSistemas\SISTEMA-GESTION-DE-HOTEL\obj\Debug\SISTEMA GESTION DE HOTEL.exe
+C:\Users\Itz_Tamper2814\source\repos\SistemaHotelGrupo3AnalisisSistemas\SISTEMA-GESTION-DE-HOTEL\obj\Debug\SISTEMA GESTION DE HOTEL.pdb

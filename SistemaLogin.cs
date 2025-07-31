@@ -102,7 +102,7 @@ namespace SISTEMA_GESTION_DE_HOTEL
                 else
                 {
                     intentos++;
-                    Console.WriteLine($"\n✗ Credenciales incorrectas. Intento {intentos}/{maxIntentos}");
+                    Console.WriteLine($"\n Credenciales incorrectas. Intento {intentos}/{maxIntentos}");
 
                     if (intentos < maxIntentos)
                     {
@@ -112,7 +112,7 @@ namespace SISTEMA_GESTION_DE_HOTEL
                 }
             }
 
-            Console.WriteLine($"\n✗ Máximo número de intentos alcanzado ({maxIntentos}).");
+            Console.WriteLine($"\n Máximo número de intentos alcanzado ({maxIntentos}).");
             Console.WriteLine("El sistema se cerrará por seguridad.");
             return false;
         }

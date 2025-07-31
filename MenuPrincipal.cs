@@ -292,7 +292,7 @@ namespace SISTEMA_GESTION_DE_HOTEL
                         continuar = false;
                         break;
                     default:
-                        Console.WriteLine("❌ Opción no válida. Presiona una tecla para continuar...");
+                        Console.WriteLine("Opción no válida. Presiona una tecla para continuar...");
                         Console.ReadKey();
                         break;
                 }
@@ -334,7 +334,7 @@ namespace SISTEMA_GESTION_DE_HOTEL
                         continuar = false;
                         break;
                     default:
-                        Console.WriteLine("❌ Opción no válida. Presiona una tecla para continuar...");
+                        Console.WriteLine("Opción no válida. Presiona una tecla para continuar...");
                         Console.ReadKey();
                         break;
                 }
@@ -372,7 +372,7 @@ namespace SISTEMA_GESTION_DE_HOTEL
                         continuar = false;
                         break;
                     default:
-                        Console.WriteLine("❌ Opción no válida. Presiona una tecla para continuar...");
+                        Console.WriteLine("Opción no válida. Presiona una tecla para continuar...");
                         Console.ReadKey();
                         break;
                 }
@@ -410,7 +410,7 @@ namespace SISTEMA_GESTION_DE_HOTEL
                         continuar = false;
                         break;
                     default:
-                        Console.WriteLine("❌ Opción no válida. Presiona una tecla para continuar...");
+                        Console.WriteLine("Opción no válida. Presiona una tecla para continuar...");
                         Console.ReadKey();
                         break;
                 }
@@ -447,7 +447,7 @@ namespace SISTEMA_GESTION_DE_HOTEL
                         continuar = false;
                         break;
                     default:
-                        Console.WriteLine("❌ Opción no válida. Presiona una tecla para continuar...");
+                        Console.WriteLine("Opción no válida. Presiona una tecla para continuar...");
                         Console.ReadKey();
                         break;
                 }
@@ -525,22 +525,22 @@ namespace SISTEMA_GESTION_DE_HOTEL
 
                 if (habitacion == null)
                 {
-                    Console.WriteLine("❌ La habitación no existe.");
+                    Console.WriteLine("La habitación no existe.");
                 }
                 else if (!habitacion.Disponible)
                 {
-                    Console.WriteLine("❌ La habitación está ocupada.");
+                    Console.WriteLine("La habitación está ocupada.");
                 }
                 else
                 {
                     reservas.Add(new Reserva(cliente, numero, DateTime.Now));
                     habitacion.Disponible = false;
-                    Console.WriteLine("✅ Reserva creada exitosamente.");
+                    Console.WriteLine("Reserva creada exitosamente.");
                 }
             }
             else
             {
-                Console.WriteLine("❌ Número inválido.");
+                Console.WriteLine("Número inválido.");
             }
 
             Console.WriteLine("Presiona una tecla para continuar...");
@@ -560,7 +560,7 @@ namespace SISTEMA_GESTION_DE_HOTEL
             {
                 foreach (var r in reservas)
                 {
-                    Console.WriteLine($"📌 Cliente: {r.Cliente} | Habitación: {r.NumeroHabitacion} | Fecha: {r.Fecha:g}");
+                    Console.WriteLine($"Cliente: {r.Cliente} | Habitación: {r.NumeroHabitacion} | Fecha: {r.Fecha:g}");
                 }
             }
 
@@ -589,16 +589,16 @@ namespace SISTEMA_GESTION_DE_HOTEL
                         habitacion.Disponible = true;
                     }
 
-                    Console.WriteLine("✅ Reserva cancelada exitosamente.");
+                    Console.WriteLine("Reserva cancelada exitosamente.");
                 }
                 else
                 {
-                    Console.WriteLine("❌ Reserva no encontrada.");
+                    Console.WriteLine("Reserva no encontrada.");
                 }
             }
             else
             {
-                Console.WriteLine("❌ Número inválido.");
+                Console.WriteLine("Número inválido.");
             }
 
             Console.WriteLine("Presiona una tecla para continuar...");
@@ -622,7 +622,7 @@ namespace SISTEMA_GESTION_DE_HOTEL
             {
                 foreach (var hab in habitaciones)
                 {
-                    Console.WriteLine($"🛏 Habitación {hab.Numero} | Tipo: {hab.Tipo} | Estado: {(hab.Disponible ? "Disponible" : "Ocupada")}");
+                    Console.WriteLine($"Habitación {hab.Numero} | Tipo: {hab.Tipo} | Estado: {(hab.Disponible ? "Disponible" : "Ocupada")}");
                 }
             }
 
@@ -647,12 +647,12 @@ namespace SISTEMA_GESTION_DE_HOTEL
                     Console.Write("Tipo de habitación (Sencilla, Doble, Suite): ");
                     string tipo = Console.ReadLine();
                     habitaciones.Add(new Habitacion(numero, tipo));
-                    Console.WriteLine("✅ Habitación agregada exitosamente.");
+                    Console.WriteLine("Habitación agregada exitosamente.");
                 }
             }
             else
             {
-                Console.WriteLine("❌ Número inválido.");
+                Console.WriteLine("Número inválido.");
             }
 
             Console.WriteLine("Presiona una tecla para continuar...");
@@ -671,16 +671,16 @@ namespace SISTEMA_GESTION_DE_HOTEL
                 if (habitacion != null)
                 {
                     habitacion.Disponible = !habitacion.Disponible;
-                    Console.WriteLine($"✅ Estado cambiado a: {(habitacion.Disponible ? "Disponible" : "Ocupada")}");
+                    Console.WriteLine($"Estado cambiado a: {(habitacion.Disponible ? "Disponible" : "Ocupada")}");
                 }
                 else
                 {
-                    Console.WriteLine("❌ Habitación no encontrada.");
+                    Console.WriteLine("Habitación no encontrada.");
                 }
             }
             else
             {
-                Console.WriteLine("❌ Número inválido.");
+                Console.WriteLine("Número inválido.");
             }
 
             Console.WriteLine("Presiona una tecla para continuar...");
@@ -698,11 +698,11 @@ namespace SISTEMA_GESTION_DE_HOTEL
             if (!string.IsNullOrWhiteSpace(nuevoNombre))
             {
                 nombreHotel = nuevoNombre.Trim();
-                Console.WriteLine($"✅ Nombre del hotel actualizado a: {nombreHotel}");
+                Console.WriteLine($"Nombre del hotel actualizado a: {nombreHotel}");
             }
             else
             {
-                Console.WriteLine("❌ Nombre no válido, no se realizaron cambios.");
+                Console.WriteLine("Nombre no válido, no se realizaron cambios.");
             }
             Console.WriteLine("Presiona una tecla para continuar...");
             Console.ReadKey();
@@ -716,11 +716,11 @@ namespace SISTEMA_GESTION_DE_HOTEL
             if (int.TryParse(Console.ReadLine(), out int nuevoMax) && nuevoMax > 0)
             {
                 maxHabitaciones = nuevoMax;
-                Console.WriteLine($"✅ Número máximo de habitaciones actualizado a: {maxHabitaciones}");
+                Console.WriteLine($"Número máximo de habitaciones actualizado a: {maxHabitaciones}");
             }
             else
             {
-                Console.WriteLine("❌ Valor inválido, no se realizaron cambios.");
+                Console.WriteLine("Valor inválido, no se realizaron cambios.");
             }
             Console.WriteLine("Presiona una tecla para continuar...");
             Console.ReadKey();
@@ -736,11 +736,11 @@ namespace SISTEMA_GESTION_DE_HOTEL
             if (TimeSpan.TryParse(nuevoHorario, out _))
             {
                 horarioCheckIn = nuevoHorario;
-                Console.WriteLine($"✅ Horario de check-in actualizado a: {horarioCheckIn}");
+                Console.WriteLine($"Horario de check-in actualizado a: {horarioCheckIn}");
             }
             else
             {
-                Console.WriteLine("❌ Formato inválido, no se realizaron cambios.");
+                Console.WriteLine("Formato inválido, no se realizaron cambios.");
             }
             Console.WriteLine("Presiona una tecla para continuar...");
             Console.ReadKey();
@@ -756,11 +756,11 @@ namespace SISTEMA_GESTION_DE_HOTEL
             if (TimeSpan.TryParse(nuevoHorario, out _))
             {
                 horarioCheckOut = nuevoHorario;
-                Console.WriteLine($"✅ Horario de check-out actualizado a: {horarioCheckOut}");
+                Console.WriteLine($"Horario de check-out actualizado a: {horarioCheckOut}");
             }
             else
             {
-                Console.WriteLine("❌ Formato inválido, no se realizaron cambios.");
+                Console.WriteLine("Formato inválido, no se realizaron cambios.");
             }
             Console.WriteLine("Presiona una tecla para continuar...");
             Console.ReadKey();
@@ -781,7 +781,7 @@ namespace SISTEMA_GESTION_DE_HOTEL
             {
                 foreach (var u in activos)
                 {
-                    Console.WriteLine($"👤 {u.NombreCompleto} | Usuario: {u.NombreUsuario} | Rol: {u.Tipo}");
+                    Console.WriteLine($"{u.NombreCompleto} | Usuario: {u.NombreUsuario} | Rol: {u.Tipo}");
                 }
             }
 
@@ -800,7 +800,7 @@ namespace SISTEMA_GESTION_DE_HOTEL
 
             foreach (var grupo in conteo)
             {
-                Console.WriteLine($"📊 {grupo.Tipo}: {grupo.Cantidad} usuarios");
+                Console.WriteLine($"{grupo.Tipo}: {grupo.Cantidad} usuarios");
             }
 
             Console.WriteLine("\nPresiona una tecla para volver...");
@@ -814,7 +814,7 @@ namespace SISTEMA_GESTION_DE_HOTEL
 
             foreach (var usuario in usuarios)
             {
-                Console.WriteLine($"👤 {usuario.NombreCompleto} | Usuario: {usuario.NombreUsuario} | Rol: {usuario.Tipo} | Estado: {(usuario.Activo ? "Activo" : "Inactivo")}");
+                Console.WriteLine($"{usuario.NombreCompleto} | Usuario: {usuario.NombreUsuario} | Rol: {usuario.Tipo} | Estado: {(usuario.Activo ? "Activo" : "Inactivo")}");
             }
 
             Console.WriteLine("\nPresiona una tecla para volver...");
@@ -840,7 +840,7 @@ namespace SISTEMA_GESTION_DE_HOTEL
             int tipo = int.Parse(Console.ReadLine());
 
             usuarios.Add(new Usuario(username, pass, (TipoUsuario)tipo, nombre));
-            Console.WriteLine("\n✅ Usuario agregado exitosamente.");
+            Console.WriteLine("\nUsuario agregado exitosamente.");
             Console.WriteLine("Presiona una tecla para continuar...");
             Console.ReadKey();
         }
@@ -856,7 +856,7 @@ namespace SISTEMA_GESTION_DE_HOTEL
             var usuario = usuarios.FirstOrDefault(u => u.NombreUsuario == username);
             if (usuario == null)
             {
-                Console.WriteLine("❌ Usuario no encontrado.");
+                Console.WriteLine("Usuario no encontrado.");
                 Console.ReadKey();
                 return;
             }
@@ -878,7 +878,7 @@ namespace SISTEMA_GESTION_DE_HOTEL
             if (!string.IsNullOrWhiteSpace(nuevoTipo))
                 usuario.Tipo = (TipoUsuario)int.Parse(nuevoTipo);
 
-            Console.WriteLine("✅ Usuario actualizado. Presiona una tecla para continuar...");
+            Console.WriteLine("Usuario actualizado. Presiona una tecla para continuar...");
             Console.ReadKey();
         }
 
@@ -893,13 +893,13 @@ namespace SISTEMA_GESTION_DE_HOTEL
             var usuario = usuarios.FirstOrDefault(u => u.NombreUsuario == username);
             if (usuario == null)
             {
-                Console.WriteLine("❌ Usuario no encontrado.");
+                Console.WriteLine("Usuario no encontrado.");
                 Console.ReadKey();
                 return;
             }
 
             usuario.Activo = false;
-            Console.WriteLine($"✅ Usuario {usuario.NombreUsuario} desactivado.");
+            Console.WriteLine($"Usuario {usuario.NombreUsuario} desactivado.");
             Console.WriteLine("Presiona una tecla para continuar...");
             Console.ReadKey();
         }

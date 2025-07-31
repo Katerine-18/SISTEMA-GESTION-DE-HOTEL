@@ -40,11 +40,11 @@ namespace SISTEMA_GESTION_DE_HOTEL
 
             if (!string.IsNullOrWhiteSpace(servicio))
             {
-                Console.WriteLine($"✅ Solicitud enviada: '{servicio}'. Nuestro personal lo atenderá pronto.");
+                Console.WriteLine($"Solicitud enviada: '{servicio}'. Nuestro personal lo atenderá pronto.");
             }
             else
             {
-                Console.WriteLine("❌ No se ingresó ningún servicio.");
+                Console.WriteLine("No se ingresó ningún servicio.");
             }
         }
 
