@@ -34,17 +34,17 @@ namespace SISTEMA_GESTION_DE_HOTEL
 
         public void SolicitarServicioHabitacion()
         {
-            Console.WriteLine("\n== SOLICITAR SERVICIO A LA HABITACIÓN ===");
+            Console.WriteLine("\n=== SOLICITAR SERVICIO A LA HABITACIÓN ===");
             Console.Write("Escriba el servicio que desea solicitar (ej. comida, toallas, limpieza): ");
             string servicio = Console.ReadLine();
 
             if (!string.IsNullOrWhiteSpace(servicio))
             {
-                Console.WriteLine($" Solicitud enviada: '{servicio}'. Nuestro personal lo atenderá pronto.");
+                Console.WriteLine($"✅ Solicitud enviada: '{servicio}'. Nuestro personal lo atenderá pronto.");
             }
             else
             {
-                Console.WriteLine(" No se ingresó ningún servicio.");
+                Console.WriteLine("❌ No se ingresó ningún servicio.");
             }
         }
 
