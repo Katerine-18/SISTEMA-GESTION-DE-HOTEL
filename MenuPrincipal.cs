@@ -640,7 +640,7 @@ namespace SISTEMA_GESTION_DE_HOTEL
             {
                 if (habitaciones.Any(h => h.Numero == numero))
                 {
-                    Console.WriteLine("❌ Ya existe una habitación con ese número.");
+                    Console.WriteLine("Ya existe una habitación con ese número.");
                 }
                 else
                 {
