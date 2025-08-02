@@ -157,19 +157,33 @@ namespace SISTEMA_GESTION_DE_HOTEL
         private void EjecutarOpcionRecepcionista(int opcion)
         {
             switch (opcion)
-            {
-                case 1:
-                case 2:
-                case 3:
-                case 4:
-                case 5:
-                    Console.WriteLine("En desarrollo");
-                    break;
-                default:
-                    Console.WriteLine("Opción no válida");
-                    break;
-            }
-        }
+    {
+        case 1:
+            RecepcionistaManager.RegistrarCliente();
+            break;
+        case 2:
+            RecepcionistaManager.VerReservas();
+            break;
+        case 3:
+            RecepcionistaManager.HacerCheckIn();
+            break;
+        case 4:
+            RecepcionistaManager.HacerCheckOut();
+            break;
+        case 5:
+            Console.WriteLine("Saliendo del sistema...");
+            break;
+        default:
+            Console.WriteLine("Opción inválida.");
+            break;
+    }
+
+    if (opcion != 5)
+    {
+        Console.WriteLine("Presione una tecla para continuar...");
+        Console.ReadKey();
+    }
+}
 
         private void EjecutarOpcionHuesped(int opcion)
         {
@@ -905,3 +919,4 @@ namespace SISTEMA_GESTION_DE_HOTEL
         }
     }
 }
+
