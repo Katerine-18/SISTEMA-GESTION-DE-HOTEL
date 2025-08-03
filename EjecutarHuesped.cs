@@ -44,7 +44,7 @@ namespace SISTEMA_GESTION_DE_HOTEL
             }
             else
             {
-                Console.WriteLine(" No se ingresó ningún servicio.");
+                Console.WriteLine("No se ingresó ningún servicio.");
             }
         }
 
