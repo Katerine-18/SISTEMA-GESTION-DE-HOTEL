@@ -1,10 +1,10 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SISTEMA_GESTION_DE_HOTEL
+namespace SistemaGestionHotel
 {
     // Clase cliente
     public class Cliente
@@ -94,8 +94,7 @@ namespace SISTEMA_GESTION_DE_HOTEL
             }
         }
     }
-}
 
 
-    
+
 }
