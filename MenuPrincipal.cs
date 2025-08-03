@@ -154,23 +154,6 @@ namespace SISTEMA_GESTION_DE_HOTEL
             }
         }
 
-        private void EjecutarOpcionRecepcionista(int opcion)
-        {
-            switch (opcion)
-            {
-                case 1:
-                case 2:
-                case 3:
-                case 4:
-                case 5:
-                    Console.WriteLine("En desarrollo");
-                    break;
-                default:
-                    Console.WriteLine("Opción no válida");
-                    break;
-            }
-        }
-
         private void EjecutarOpcionHuesped(int opcion)
         {
             EjecutarHuesped acciones = new EjecutarHuesped(usuarioActual);
@@ -904,4 +887,5 @@ namespace SISTEMA_GESTION_DE_HOTEL
             Console.ReadKey();
         }
     }
+
 }
