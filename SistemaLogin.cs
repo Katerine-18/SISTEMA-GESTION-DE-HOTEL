@@ -9,9 +9,11 @@ namespace SISTEMA_GESTION_DE_HOTEL
         private List<Usuario> usuarios;
         private Usuario usuarioActual; // Variable para almacenar el usuario logueado
 
+
         public SistemaLogin(List<Usuario> listaUsuarios)
         {
             usuarios = listaUsuarios;
+
         }
 
         public SistemaLogin()
@@ -102,17 +104,18 @@ namespace SISTEMA_GESTION_DE_HOTEL
                 else
                 {
                     intentos++;
-                    Console.WriteLine($"\n✗ Credenciales incorrectas. Intento {intentos}/{maxIntentos}");
+                    Console.WriteLine($"\n Credenciales incorrectas. Intento {intentos}/{maxIntentos}");
 
-                    if (intentos < maxIntentos)
+                    if (intentos >= maxIntentos)
                     {
-                        Console.WriteLine("Presiona cualquier tecla para intentar nuevamente...");
-                        Console.ReadKey();
+                        continue;
                     }
+                    Console.WriteLine("Presiona cualquier tecla para intentar nuevamente...");
+                    Console.ReadKey();
                 }
             }
 
-            Console.WriteLine($"\n✗ Máximo número de intentos alcanzado ({maxIntentos}).");
+            Console.WriteLine($"\n Máximo número de intentos alcanzado ({maxIntentos}).");
             Console.WriteLine("El sistema se cerrará por seguridad.");
             return false;
         }

@@ -55,7 +55,7 @@ namespace SistemaGestionHotel
 
         public static void HacerCheckIn()
         {
-            Console.WriteLine("===== CHECK-IN CLIENTE =====");
+            Console.WriteLine("===== VERIFICANDO CLIENTE =====");
             Console.Write("Ingrese el número de identidad del cliente: ");
             string identidad = Console.ReadLine();
             Cliente cliente = listaClientes.Find(c => c.Identidad == identidad);
@@ -79,14 +79,14 @@ namespace SistemaGestionHotel
 
         public static void HacerCheckOut()
         {
-            Console.WriteLine("===== CHECK-OUT CLIENTE =====");
+            Console.WriteLine("===== VERIFCANDO CLIENTE =====");
             Console.Write("Ingrese el número de identidad del cliente: ");
             string identidad = Console.ReadLine();
             Cliente cliente = listaClientes.Find(c => c.Identidad == identidad);
             if (cliente != null)
             {
                 listaClientes.Remove(cliente);
-                Console.WriteLine("Check-out realizado. Cliente eliminado de la lista.");
+                Console.WriteLine("Se esta verificando. Cliente eliminado de la lista.");
             }
             else
             {
@@ -98,3 +98,4 @@ namespace SistemaGestionHotel
 
 
 }
+

@@ -29,6 +29,8 @@ namespace SISTEMA_GESTION_DE_HOTEL
         }
 
         // Constructor con parámetros
+
+
         public Usuario(string nombreUsuario, string contraseña, TipoUsuario tipo, string nombreCompleto)
         {
             NombreUsuario = nombreUsuario;
@@ -37,6 +39,7 @@ namespace SISTEMA_GESTION_DE_HOTEL
             NombreCompleto = nombreCompleto;
             FechaCreacion = DateTime.Now;
             Activo = true;
+
         }
 
         // Método para mostrar información del usuario
