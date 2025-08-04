@@ -26,14 +26,14 @@ namespace SISTEMA_GESTION_DE_HOTEL
                 case "4":
                 case "5":
                 case "6":
-                    Console.WriteLine($"\n✅ Has seleccionado la opción {opcion}");
+                    Console.WriteLine($"\n Has seleccionado la opción {opcion}");
                     Console.WriteLine("Esta funcionalidad se implementará próximamente...");
                     Console.WriteLine("\nPresiona cualquier tecla para continuar...");
                     Console.ReadKey();
                     break;
 
                 default:
-                    Console.WriteLine("\n❌ Opción no válida. Intenta nuevamente.");
+                    Console.WriteLine("\n Opción no válida. Intenta nuevamente.");
                     Console.WriteLine("Presiona cualquier tecla para continuar...");
                     Console.ReadKey();
                     break;

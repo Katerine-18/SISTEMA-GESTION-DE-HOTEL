@@ -29,12 +29,12 @@ namespace SISTEMA_GESTION_DE_HOTEL
         }
 
         // Constructor con parámetros
-        public Usuario(string nombreUsuario, string contraseña, string nombreCompleto, TipoUsuario tipo)
+        public Usuario(string nombreUsuario, string contraseña, TipoUsuario tipo, string nombreCompleto)
         {
             NombreUsuario = nombreUsuario;
             Contraseña = contraseña;
-            NombreCompleto = nombreCompleto;
             Tipo = tipo;
+            NombreCompleto = nombreCompleto;
             FechaCreacion = DateTime.Now;
             Activo = true;
         }

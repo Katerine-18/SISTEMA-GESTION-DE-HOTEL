@@ -9,6 +9,11 @@ namespace SISTEMA_GESTION_DE_HOTEL
         private List<Usuario> usuarios;
         private Usuario usuarioActual; // Variable para almacenar el usuario logueado
 
+        public SistemaLogin(List<Usuario> listaUsuarios)
+        {
+            usuarios = listaUsuarios;
+        }
+
         public SistemaLogin()
         {
             InicializarUsuarios();
@@ -23,15 +28,15 @@ namespace SISTEMA_GESTION_DE_HOTEL
                 {
                     Id = 1,
                     NombreUsuario = "admin",
-                    //Contraseña = "admin2025",
-                    NombreCompleto = "Administrador Principal",
+                    Contraseña = "admin2025",
+                    NombreCompleto = "Marlon Varela",
                     Tipo = TipoUsuario.Administrador
                 },
                 new Usuario
                 {
                     Id = 2,
                     NombreUsuario = "recepcion",
-                    //Contraseña = "recep2025",
+                    Contraseña = "recep2025",
                     NombreCompleto = "Katerine Ramirez",
                     Tipo = TipoUsuario.Recepcionista
                 },
@@ -39,7 +44,7 @@ namespace SISTEMA_GESTION_DE_HOTEL
                 {
                     Id = 3,
                     NombreUsuario = "huesped1",
-                    //Contraseña = "sindy2025",
+                    Contraseña = "sindy2025",
                     NombreCompleto = "Sindy Romero",
                     Tipo = TipoUsuario.Huesped
                 }
@@ -89,7 +94,7 @@ namespace SISTEMA_GESTION_DE_HOTEL
                 if (usuario != null)
                 {
                     usuarioActual = usuario; // Se guardara datos de Usuario
-                    Console.WriteLine($"\n✓ Bienvenido, {usuario.NombreCompleto}!");
+                    Console.WriteLine($"\n Bienvenido, {usuario.NombreCompleto}!");
                     Console.WriteLine("Presiona cualquier tecla para continuar...");
                     Console.ReadKey();
                     return true;
