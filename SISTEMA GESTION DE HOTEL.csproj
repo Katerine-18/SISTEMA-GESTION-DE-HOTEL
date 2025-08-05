@@ -44,6 +44,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="EjecutarOpcionRecepcionista.cs" />
     <Compile Include="Encabezado.cs" />
     <Compile Include="Habitacion.cs" />
     <Compile Include="MenuPrincipal.cs" />
@@ -60,5 +61,4 @@
     <None Include="App.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
-
 </Project>
