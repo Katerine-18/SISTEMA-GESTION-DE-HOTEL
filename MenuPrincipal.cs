@@ -154,6 +154,30 @@ namespace SISTEMA_GESTION_DE_HOTEL
             }
         }
 
+        private void EjecutarOpcionRecepcionista(int opcion)
+        {
+            switch (opcion)
+            {
+                case 1:
+                    RecepcionistaManager.RegistrarCliente();
+                    break;
+                case 2:
+                    RecepcionistaManager.VerReservas();
+                    break;
+                case 3:
+                    RecepcionistaManager.HacerCheckIn();
+                    break;
+                case 4:
+                    RecepcionistaManager.HacerCheckOut();
+                    break;
+                case 5:
+                    Console.WriteLine("Saliendo del sistema...");
+                    break;
+                default:
+                    Console.WriteLine("Opción no válida.");
+                    break;
+            }
+
         private void EjecutarOpcionHuesped(int opcion)
         {
             EjecutarHuesped acciones = new EjecutarHuesped(usuarioActual);
@@ -889,3 +913,4 @@ namespace SISTEMA_GESTION_DE_HOTEL
     }
 
 }
+
