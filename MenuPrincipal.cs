@@ -58,8 +58,8 @@ namespace SISTEMA_GESTION_DE_HOTEL
         private bool MostrarMenuRecepcionista()
         {
             Console.WriteLine("=== MENÚ RECEPCIONISTA ===");
-            Console.WriteLine("1. Check-in de Huéspedes");
-            Console.WriteLine("2. Check-out de Huéspedes");
+            Console.WriteLine("1. Registrar Huéspedes");
+            Console.WriteLine("2. Verificar Huésped");
             Console.WriteLine("3. Consultar Reservas");
             Console.WriteLine("4. Gestión de Habitaciones");
             Console.WriteLine("5. Facturación");
@@ -915,5 +915,6 @@ namespace SISTEMA_GESTION_DE_HOTEL
     }
 
 }
+
 
 
