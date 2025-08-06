@@ -178,6 +178,8 @@ namespace SISTEMA_GESTION_DE_HOTEL
                     break;
             }
 
+        }
+
         private void EjecutarOpcionHuesped(int opcion)
         {
             EjecutarHuesped acciones = new EjecutarHuesped(usuarioActual);
@@ -913,4 +915,5 @@ namespace SISTEMA_GESTION_DE_HOTEL
     }
 
 }
+
 
