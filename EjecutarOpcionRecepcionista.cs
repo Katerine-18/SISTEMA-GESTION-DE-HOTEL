@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SistemaGestionHotel
+namespace SISTEMA_GESTION_DE_HOTEL
 {
     // Clase cliente
     public class Cliente
