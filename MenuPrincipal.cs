@@ -61,8 +61,8 @@ namespace SISTEMA_GESTION_DE_HOTEL
             Console.WriteLine("1. Registrar Huéspedes");
             Console.WriteLine("2. Verificar Huésped");
             Console.WriteLine("3. Consultar Reservas");
-            Console.WriteLine("4. Gestión de Habitaciones");
-            Console.WriteLine("5. Facturación");
+            Console.WriteLine("4. Eliminar Reserva");
+            Console.WriteLine("5. Salir del Sistema");
             Console.WriteLine("0. Cerrar Sesión");
             Console.Write("\nSelecciona una opción: ");
             return ProcesarOpcionMenu();
@@ -915,6 +915,7 @@ namespace SISTEMA_GESTION_DE_HOTEL
     }
 
 }
+
 
 
 
