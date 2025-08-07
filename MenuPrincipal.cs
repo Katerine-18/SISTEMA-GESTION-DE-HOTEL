@@ -60,7 +60,7 @@ namespace SISTEMA_GESTION_DE_HOTEL
             Console.WriteLine("=== MENÚ RECEPCIONISTA ===");
             Console.WriteLine("1. Registrar Huéspedes");
             Console.WriteLine("2. Verificar Huésped");
-            Console.WriteLine("3. Consultar Reservas");
+            Console.WriteLine("3. Verificando Registro");
             Console.WriteLine("4. Eliminar Reserva");
             Console.WriteLine("5. Salir del Sistema");
             Console.WriteLine("0. Cerrar Sesión");
@@ -915,6 +915,7 @@ namespace SISTEMA_GESTION_DE_HOTEL
     }
 
 }
+
 
 
 
